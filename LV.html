@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LV | Luxury Collection</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#102744',
+            blue: '#244B78',
+            ivory: '#FAFAF8'
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'serif'],
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-white text-navy font-sans">
+
+  <!-- Announcement -->
+  <div class="bg-navy text-white text-center py-2 text-xs tracking-[0.2em]">
+    DISCOVER THE NEW COLLECTION
+  </div>
+
+  <!-- Navigation -->
+  <header class="bg-white border-b border-gray-100">
+    <nav class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+      <button aria-label="Buka menu" class="text-2xl md:hidden"
+        onclick="document.getElementById('mobileMenu').classList.toggle('hidden')">
+        ☰
+      </button>
+
+      <div class="hidden md:flex gap-8 text-xs tracking-widest">
+        <a href="#koleksi" class="hover:text-blue">KOLEKSI</a>
+        <a href="#tentang" class="hover:text-blue">TENTANG KAMI</a>
+        <a href="#unggulan" class="hover:text-blue">UNGGULAN</a>
+      </div>
+
+      <a href="#" class="font-serif text-3xl md:text-4xl tracking-[0.18em] font-semibold">
+        LV
+      </a>
+
+      <a href="#koleksi" class="text-xs tracking-widest border-b border-navy pb-1">
+        EXPLORE
+      </a>
+    </nav>
+
+    <div id="mobileMenu" class="hidden md:hidden px-6 pb-5 space-y-4 text-sm">
+      <a href="#koleksi" class="block">Koleksi</a>
+      <a href="#tentang" class="block">Tentang Kami</a>
+      <a href="#unggulan" class="block">Unggulan</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="bg-ivory">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-8 px-6 py-12 md:py-20">
+
+        <div class="order-2 md:order-1 py-5 md:py-12">
+          <p class="uppercase tracking-[0.35em] text-xs text-blue mb-6">
+            The Art of Luxury
+          </p>
+
+          <h1 class="font-serif text-5xl md:text-7xl leading-tight">
+            Elegance in<br>
+            <span class="italic text-blue">Every Detail.</span>
+          </h1>
+
+          <p class="mt-6 text-gray-600 leading-8 max-w-md text-sm">
+            Temukan koleksi tas premium dengan desain timeless,
+            detail eksklusif, dan karakter elegan untuk setiap momen.
+          </p>
+
+          <div class="mt-9 flex flex-wrap gap-4">
+            <a href="#koleksi"
+              class="bg-navy text-white px-8 py-4 text-xs tracking-[0.2em] hover:bg-blue transition">
+              EXPLORE COLLECTION
+            </a>
+
+            <a href="#tentang"
+              class="border border-navy px-8 py-4 text-xs tracking-[0.2em] hover:bg-white transition">
+              OUR STORY
+            </a>
+          </div>
+
+          <div class="mt-12 flex gap-10">
+            <div>
+              <p class="font-serif text-2xl">01</p>
+              <p class="text-[10px] tracking-widest text-gray-500 mt-1">TIMELESS STYLE</p>
+            </div>
+            <div>
+              <p class="font-serif text-2xl">02</p>
+              <p class="text-[10px] tracking-widest text-gray-500 mt-1">FINE DETAILS</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-1 md:order-2 relative">
+          <img
+            src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1000&q=85"
+            alt="Tas tangan elegan untuk koleksi fashion premium"
+            class="w-full h-[380px] md:h-[600px] object-cover">
+
+          <div class="absolute bottom-5 left-5 bg-white/90 px-5 py-4">
+            <p class="text-[10px] tracking-[0.2em] text-blue">SIGNATURE PIECE</p>
+            <p class="font-serif text-xl mt-1">The Iconic Bag</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Brand Story -->
+    <section id="tentang" class="max-w-7xl mx-auto px-6 py-20 text-center">
+      <p class="text-xs tracking-[0.3em] text-blue">A WORLD OF ELEGANCE</p>
+
+      <h2 class="font-serif text-3xl md:text-5xl mt-5">
+        Luxury Is an Attitude
+      </h2>
+
+      <p class="text-gray-500 text-sm max-w-2xl mx-auto mt-6 leading-8">
+        Gaya yang istimewa hadir dari detail yang sederhana.
+        Jelajahi inspirasi fashion dengan siluet modern, warna klasik,
+        dan estetika yang memancarkan keanggunan.
+      </p>
+    </section>
+
+    <!-- Collection -->
+    <section id="koleksi" class="bg-ivory py-20">
+      <div class="max-w-7xl mx-auto px-6">
+
+        <div class="flex justify-between items-end mb-10">
+          <div>
+            <p class="text-xs tracking-[0.3em] text-blue">CURATED FOR YOU</p>
+            <h2 class="font-serif text-3xl md:text-5xl mt-3">
+              The Collection
+            </h2>
+          </div>
+
+          <a href="#unggulan"
+            class="hidden md:block text-xs tracking-widest border-b border-navy pb-2">
+            VIEW ALL
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
+
+          <!-- Bag 1 -->
+          <article class="group">
+            <div class="bg-white overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=700&q=85"
+                alt="Tas tangan klasik"
+                class="w-full h-80 object-cover group-hover:scale-105 transition duration-500">
+            </div>
+            <div class="pt-5 flex justify-between items-start">
+              <div>
+                <h3 class="font-serif text-xl">The Classic</h3>
+                <p class="text-gray-500 text-sm mt-2">Timeless Handbag</p>
+              </div>
+              <span class="text-blue text-xs tracking-widest">01</span>
+            </div>
+          </article>
+
+          <!-- Bag 2 -->
+          <article class="group">
+            <div class="bg-white overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=700&q=85"
+                alt="Tas bahu elegan"
+                class="w-full h-80 object-cover group-hover:scale-105 transition duration-500">
+            </div>
+            <div class="pt-5 flex justify-between items-start">
+              <div>
+                <h3 class="font-serif text-xl">The Modern</h3>
+                <p class="text-gray-500 text-sm mt-2">Luxury Shoulder Bag</p>
+              </div>
+              <span class="text-blue text-xs tracking-widest">02</span>
+            </div>
+          </article>
+
+          <!-- Bag 3 -->
+          <article class="group">
+            <div class="bg-white overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=700&q=85"
+                alt="Tas fashion premium"
+                class="w-full h-80 object-cover group-hover:scale-105 transition duration-500">
+            </div>
+            <div class="pt-5 flex justify-between items-start">
+              <div>
+                <h3 class="font-serif text-xl">The Signature</h3>
+                <p class="text-gray-500 text-sm mt-2">Everyday Luxury</p>
+              </div>
+              <span class="text-blue text-xs tracking-widest">03</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Banner -->
+    <section id="unggulan" class="max-w-7xl mx-auto px-6 py-20">
+      <div class="bg-navy text-white grid md:grid-cols-2 items-center">
+        <div class="p-8 md:p-16">
+          <p class="text-xs tracking-[0.3em] text-blue-200">
+            THE SIGNATURE EDIT
+          </p>
+          <h2 class="font-serif text-4xl md:text-5xl leading-tight mt-5">
+            Made to Be<br>Remembered.
+          </h2>
+          <p class="text-gray-300 text-sm leading-7 mt-6">
+            Temukan sentuhan elegan yang menyempurnakan
+            gaya personalmu, dari aktivitas sehari-hari hingga
+            momen yang paling berkesan.
+          </p>
+          <a href="#koleksi"
+            class="inline-block mt-8 bg-white text-navy px-8 py-4 text-xs tracking-[0.2em] hover:bg-gray-100 transition">
+            DISCOVER MORE
+          </a>
+        </div>
+
+        <img
+          src="https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=1000&q=85"
+          alt="Koleksi tas fashion mewah"
+          class="w-full h-80 md:h-[520px] object-cover">
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="bg-ivory text-center px-6 py-16">
+      <p class="text-xs tracking-[0.3em] text-blue">STAY INSPIRED</p>
+      <h2 class="font-serif text-3xl md:text-4xl mt-4">
+        A Touch of Luxury
+      </h2>
+      <p class="text-sm text-gray-500 mt-4">
+        Discover timeless style and curated inspiration.
+      </p>
+      <a href="#koleksi"
+        class="inline-block mt-7 bg-navy text-white px-8 py-4 text-xs tracking-[0.2em]">
+        EXPLORE NOW
+      </a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-gray-100">
+    <div class="max-w-7xl mx-auto px-6 py-10 text-center">
+      <a href="#" class="font-serif text-3xl tracking-[0.2em]">LV</a>
+      <p class="text-xs text-gray-500 mt-4 tracking-widest">
+        ELEGANCE · CRAFTSMANSHIP · TIMELESS STYLE
+      </p>
+      <p class="text-xs text-gray-400 mt-6">
+        © 2026 Luxury Collection. Demo website.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
